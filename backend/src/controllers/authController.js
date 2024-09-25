@@ -4,12 +4,18 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { validateUser } = require('../models/authModel'); 
 
+
+// exports.checkemail = async (req,res) => {
+//     const { email} = req.body;   
+    
+// }
 exports.createUser = async (req, res) => {
     const { email, firstName, lastName, password } = req.body;
 
     if (!email || !firstName || !password || !lastName) {
         return res.status(400).json({ message: "All fields are required" });
     }
+    console.log(req.body);
     try {
         // Validate the user data
         const validatedUser = validateUser(req.body);
@@ -38,7 +44,6 @@ exports.createUser = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
-
 
 exports.login = async (req, res) => {
     const { email, password } = req.body;

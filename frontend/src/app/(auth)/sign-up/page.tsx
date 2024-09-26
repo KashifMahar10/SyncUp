@@ -65,25 +65,31 @@ const Page = () => {
                             <FormItem>
                                 <FormLabel className="text-gray-700">Email</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Enter your Email" className="border border-gray-300 focus:ring-2 focus:ring-blue-500" {...field} />
+                                    <Input placeholder="Enter your Email" 
+                                    className="border border-gray-300 focus:ring-2 focus:ring-blue-500" 
+                                    {...field} />
                                 </FormControl>
-                                <FormMessage />
+                                <FormMessage className="text-red-500"/>
                             </FormItem>
                         )} />
                         <FormField control={form.control} name="firstName" render={({ field }) => (
                             <FormItem>
                                 <FormLabel className="text-gray-700">First Name</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Enter your First Name" className="border border-gray-300 focus:ring-2 focus:ring-blue-500" {...field} />
+                                    <Input placeholder="Enter your First Name" 
+                                    className="border border-gray-300 focus:ring-2 focus:ring-blue-500" 
+                                    {...field} />
                                 </FormControl>
-                                <FormMessage />
+                                <FormMessage  className="text-red-500"/>
                             </FormItem>
                         )} />
                         <FormField control={form.control} name="lastName" render={({ field }) => (
                             <FormItem>
                                 <FormLabel className="text-gray-700">Last Name</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Enter your Last Name" className="border border-gray-300 focus:ring-2 focus:ring-blue-500" {...field} />
+                                    <Input placeholder="Enter your Last Name" 
+                                    className="border border-gray-300 focus:ring-2 focus:ring-blue-500" 
+                                    {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -92,12 +98,15 @@ const Page = () => {
                             <FormItem>
                                 <FormLabel className="text-gray-700">Password</FormLabel>
                                 <FormControl>
-                                    <Input type="password" placeholder="Enter your Password" className="border border-gray-300 focus:ring-2 focus:ring-blue-500" {...field} />
+                                    <Input type="password" placeholder="Enter your Password" 
+                                    className="border border-gray-300 focus:ring-2 focus:ring-blue-500" 
+                                    {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                         )} />
-                        <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-900 text-white hover:bg-purple-600 transition duration-200">
+                        <Button type="submit" disabled={isSubmitting} 
+                        className="w-full bg-blue-900 text-white hover:bg-purple-600 transition duration-200">
                             {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Sign Up'}
                         </Button>
                     </form>

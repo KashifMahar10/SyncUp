@@ -1,6 +1,12 @@
+import Sidebar from "@/components/ui/sidebar";
+import Header from "@/components/ui/header";
+
 
 export default function Home() {
   return (
-     <h1>Welcome to NEXT JS</h1>
+    <>
+    <Sidebar/>
+    <Header/>
+    </>
   );
 }

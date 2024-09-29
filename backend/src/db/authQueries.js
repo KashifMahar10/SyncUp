@@ -1,4 +1,4 @@
-const { use } = require('../routes/auth');
+// const { use } = require('../routes/auth');
 const conn = require('./config');
 
 const checkUserExists = async (email) => {

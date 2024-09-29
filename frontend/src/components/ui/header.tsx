@@ -3,8 +3,8 @@ import { User } from "lucide-react";
 export default function header() {
   return (
      <>
-        <nav className="border-gray-200"style={{ backgroundColor: '#2a2a2b' }}>
-            <div className="flex flex-wrap items-center justify-between p-2">
+        <nav className="border-gray-200"style={{ backgroundColor: '#2e2e30' }}>
+            <div className="mx-2 flex flex-wrap items-center justify-between p-2">
                 <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-100">Sync Up</span>
@@ -22,7 +22,7 @@ export default function header() {
                                 <input 
                                 type="search" 
                                 id="default-search" 
-                                className="block w-full max-w-2xl p-2 pl-12 text-sm border-none  rounded-full focus:ring-blue-500 focus:border-blue-50 dark:placeholder-gray-400" 
+                                className="block w-full max-w-2xl p-2 pl-12 text-sm text-gray-900 border-none rounded-full focus:ring-blue-500 focus:border-blue-50 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                                 placeholder="Search" 
                                 style={{backgroundColor:'#565557'}}
                                 required 

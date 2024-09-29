@@ -76,3 +76,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.bg-home{
+    background-color: #e0dedc;
+}
